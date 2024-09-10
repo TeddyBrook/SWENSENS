@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+* {
+    font-size: 14px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.Header {
+    height: auto;
+    background-color: #ffffff;
+}
+
+.Header-Main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0.5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.Header-Main .swensens {
+    height: auto;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+.Header-Main .Header-Right {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.Header-Main .cart {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+
+.Header-Main .Login {
+    background-color: #D1001f;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 250px;
+    line-height: 24px;
+    border: none;
+    border-radius: 30px;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.Header-Main .Login:hover {
+    background-color: #e63946;
+}
+
+.Header-Main .language {
+    width: 20px;
+}
+
+.from-input-pop {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    text-align: left;
+    border: 1px solid #ccc;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.pop-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pop-content {
+    background-color: #fefefe;
+    padding: 40px;
+    border: 1px solid #888;
+    height: 80%;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.pop-close {
+    color: #aaa;
+    float: right;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.pop-closeclose:hover,
+.pop-closeclose:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.pop-title {
+    font-size: 30px;
+}
+
+.from-mode {
+    font-size: 16px;
+    border: 1px;
+}
+
+.from-email {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    text-align: left;
+    border: 1px solid #ccc;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.from-password {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    text-align: left;
+    border: 1px solid #ccc;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.forgot-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Login-user {
+    background-color: #D1001f;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 250px;
+    border: none;
+    border-radius: 30px;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.register-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.user-button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.user-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: 100%;
+    right: 0;
+}
+
+.user-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.user-dropdown:hover .user-content {
+    display: block;
+}
+
+.user-content button {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.user-content button:hover {
+    background-color: #f1f1f1;
+}
+
+.language-dropdown {
+    display: inline;
+    margin-right: 30px;
+}
+
+.language-button {
+    color: black;
+    background-color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline;
+}
+
+.language-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.language-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.language-dropdown:hover .language-content {
+    display: block;
+}
+
+
+
+.containerAddress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.addressText {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.addressSelector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addressBox {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: left;
+    width: 1000px;
+    margin: 50px;
+}
+
+.swbanner {
+    width: 1100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13%;
+    border-radius: 10px;
+}
+
+.promotion-container {
+    padding: 20px;
+    margin-left: 150px;
+}
+
+.addressText {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.promotion-content {
+    display: flex;
+}
+
+.promotion {
+    background-color: #ffffff;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: block;
+    width: 20%;
+    height: 10%;
+}
+
+.image-container {
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 50%;
+    height: 50%;
+}
+
+.text-container {
+    text-align: left;
+}
+
+.price {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    display: block;
+}

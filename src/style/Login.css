@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+* {
+    font-size: 14px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.required {
+    color: red
+}
+
+.from-input-login {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    text-align: left;
+    border: 1px solid #ccc;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-button {
+    background-color: #D1001f;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 250px;
+    border: none;
+    border-radius: 30px;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.login-user:hover {
+    background-color: #e63946;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background: #fafafa;
+}
+
+.container-login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.name-login {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.bar-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: var(--text-primary-color, #000);
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: var(--state-layer-primary-hovered, #e0e0e0);
+    color: var(--text-primary-color, #000);
+}
+
+.custom-button:focus {
+    background-color: var(--state-layer-primary-focused, #d0d0d0);
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.button-text {
+    color: var(--text-primary-color, #000);
+}
+
+.register-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.register-info b {
+    font-size: 18px;
+}
+
+.register-button {
+    background-color: #ffffff;
+    color: red;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 150px;
+    border: 1px solid red;
+    border-radius: 30px;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.register-button:hover {
+    background-color: red;
+    color: white;
+}
+
+.form-login {
+    width: 50%;
+    height: auto;
+    z-index: 20;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title-login h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.container-picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    width: 80%;
+    height: 80%;
+}

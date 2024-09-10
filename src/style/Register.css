@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+* {
+    font-size: 14px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.name-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.title1-name,
+.title2-name {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.required {
+    color: red
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.from-input-register {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    text-align: left;
+    border: 1px solid #ccc;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+}
+
+.checkbox-form {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.checkbox-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.checkbox-form:checked+.checkbox-circle {
+    background-color: red;
+}
+
+.checkbox-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.checkbox-form:checked+.checkbox-circle::after {
+    opacity: 1;
+}
+
+.checkbox-name {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-line {
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+.position-contain {
+    display: block;
+    margin-right: 4px;
+}
+
+.position-form {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    accent-color: red;
+    background-color: #ffffff;
+}
+
+.register-user {
+    background-color: #D1001f;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 250px;
+    border: none;
+    border-radius: 30px;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.register-user:hover {
+    background-color: #e63946;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    background: #fafafa;
+}
+
+.Container-Register {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.name-register {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.form-register {
+    width: 70%;
+    height: auto;
+    z-index: 20;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bar-register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: var(--text-primary-color, #000);
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: var(--state-layer-primary-hovered, #e0e0e0);
+    color: var(--text-primary-color, #000);
+}
+
+.custom-button:focus {
+    background-color: var(--state-layer-primary-focused, #d0d0d0);
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.button-text {
+    text-decoration: none;
+    color: var(--text-primary-color, #000);
+}
+
+.login-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-info b {
+    font-size: 18px;
+}
+
+.login-button-info {
+    background-color: #ffffff;
+    color: red;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 150px;
+    border: 1px solid red;
+    border-radius: 30px;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.login-button-info:hover {
+    background-color: red;
+    color: white;
+}
+
+.title-regis h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.Container-Picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    width: 80%;
+    height: 80%;
+}
